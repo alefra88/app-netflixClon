@@ -5,7 +5,11 @@
   "projects": {
     "app-netflixClon": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -92,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "46f28249-530a-43ba-981d-32ae4dfdf3ea"
   }
 }
