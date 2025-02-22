@@ -2,13 +2,15 @@ import { Component, computed, effect, HostListener, inject, OnInit } from '@angu
 import { MoviesService } from './services/movies.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Movie } from './models/movie.interface';
-import { JsonPipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 
 @Component({
   selector: 'app-movies',
   imports: [
-    JsonPipe
+    MovieCardComponent,
+    RouterLink
   ],
   templateUrl: './movies.component.html'
 })
